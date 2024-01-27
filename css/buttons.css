@@ -4,6 +4,7 @@
 }
 
 .buttons__button {
+    cursor: pointer;
     background: transparent;
     color: teal;
     border: none;
