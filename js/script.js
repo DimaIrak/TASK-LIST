@@ -63,7 +63,7 @@
     };
 
     const renderTasks = () => {
-        const taskToHtml = task => `
+        const taskToHTML = task => `
             <li
               class="tasks__item${task.done && hideDoneTasks ? " tasks__item--hidden" : ""} js-task
             ">
@@ -80,8 +80,8 @@
             </li>
           `;
 
-        const taskElement = document.querySelector(".js-buttons");
-        taskElement.innerHTML = tasks.map(taskToHtml).join("");
+        const taskElement = document.querySelector(".js-tasks");
+        taskElement.innerHTML = tasks.map(taskToHTML).join("");
     };
 
     const renderButtons = () => {
